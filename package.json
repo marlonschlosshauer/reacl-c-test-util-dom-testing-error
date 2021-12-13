@@ -6,6 +6,8 @@
         "shadow-cljs": "2.16.8"
     },
     "dependencies": {
+        "@testing-library/dom": "^8.11.1",
+        "@testing-library/react": "^12.1.2",
         "create-react-class": "15.7.0",
         "react": "16.14.0",
         "react-dom": "16.14.0",
