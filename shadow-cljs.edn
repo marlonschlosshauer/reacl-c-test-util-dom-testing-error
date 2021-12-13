@@ -5,7 +5,15 @@
   "src/test"]
 
  :dependencies
- []
+ [[org.clojure/clojure "1.9.0" :scope "provided"]
+  [org.clojure/clojurescript "1.9.293" :scope "provided"]
+  [de.active-group/reacl-c "0.10.6"]]
+
+ :dev-http {8080 "target/"}
 
  :builds
- {}}
+ {:frontend
+  {:output-dir "target/"
+   :asset-path "."
+   :target :browser
+   :modules {:main {:init-fn app.code/init}}}}}
